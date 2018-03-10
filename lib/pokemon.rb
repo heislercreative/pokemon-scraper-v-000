@@ -17,4 +17,6 @@ class Pokemon
     found_pokemon = db.execute("SELECT * FROM Pokemon WHERE id = ?", id_number).flatten
     Pokemon.new(id: found_pokemon[0], name: found_pokemon[1], type: found_pokemon[2], hp: found_pokemon[3], db: db)
   end
+  
+  
 end
