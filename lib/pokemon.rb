@@ -19,6 +19,6 @@ class Pokemon
   end
   
   def alter_hp(new_hp, db)
-    db.execute("ALTER TABLE Pokemon ALTER COLUMN hp")
+    db.execute("ALTER TABLE Pokemon ALTER COLUMN hp VALUES ")
   end
 end
